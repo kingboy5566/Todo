@@ -1,4 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useState } from 'react';
@@ -60,32 +63,38 @@ const allDataDelete = () => setSaveText([]);
     <>
 
     <Container className='todo '>
-      <div className='div '>
+      
       <Row className='todo-row '><Col className='todo-content1 mt-1 '>  
-     <form  onSubmit={add} >
-     < input type="text" value={inputText} onChange={handlevalue} name='name' />
-      <button type='submit' className='add-btn' >  {editIndex !== null ? "Update Todo" : "Add "} </button>
+     <Form  onSubmit={add} >
+     <InputGroup className="mb-3 mt-3">
+        
+        <Form.Control
+        type="text" value={inputText} onChange={handlevalue} name='name'
+          placeholder="Add Your Task"/>
+      <Button type='submit' className='add-btn' >  {editIndex !== null ? "Update Todo" : "Add "} </Button>
+       </InputGroup>
+   
 
-     </form>
-     
-     
+     </Form> 
      </Col></Row>
      <Row className='mt-3'>
       <Col className='todo-content2'>
-      <h4 className='task'>Your Task</h4>
+      <h4 className='task mt-2'>Your Task</h4>
          {saveText.map((value, index)=>
         
         <ul className='mt-4 data'>
           <li key={index} >{value}
-          <button onClick={()=>Delete(index)}className='delete'>Delete</button>
-          <button onClick={()=>Edith(index)} className='edith'>Edith</button>
+          <Button onClick={()=>Delete(index)}className='delete ' variant="danger">Delete</Button>
+          <Button onClick={()=>Edith(index)} className='edith'>Edith</Button>
            </li></ul>
 
         )}
+     <Button onClick={allDataDelete} className='deleteAll' variant="danger">Delete All</Button>
+
       </Col>
+
      </Row>
-     <button onClick={allDataDelete} className='deleteAll'>Delete All</button>
-     </div>
+     
      </Container>
     </>
   )

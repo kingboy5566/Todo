@@ -3,48 +3,28 @@ body{
 }
 
 .todo{
-   margin: 0;
-   padding: 0;
     height: 800px;
     overflow: auto;
     background-color: blueviolet;
     
 }
-.div{
-   border: 1px solid lightgray;
+.todo-content1{
+   
+    border: 1px solid lightgray;
+   height: auto;
+   border-radius: 4px;
+   margin: 10px 27%;
+}
+
+
+
+.todo-content2{
+   
+  border: 1px solid lightgray;
    width: 35%;
    height: auto;
    border-radius: 4px;
    margin: 10px 27%;
-   position: absolute;
-}
-
-.todo-content1{
-    display: flex;
-    justify-content: center;
-}
-
-.todo-content1 input{
-    height: 40px;
-    width: 300px;
-   border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type=text]{
-    padding-left: 5px;
-
-}
-.add-btn{
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left:5px ;
-    border: none;
-    border-radius: 4px;
-}
-.todo-content2{
-    width: 100%;
-    position: relative;
     
    
 }
@@ -55,11 +35,12 @@ input[type=text]{
     
 }
 .data{
-    border: 1px solid white;
+
     list-style: none;
     padding: 0;
     margin-top: 5px;
     color: white;
+    font-weight: 500;
     text-align: left;
     
  
@@ -85,15 +66,12 @@ margin-left: 10px;
     color: white;
 
 }
-.delete{
-    background-color: rgb(235, 53, 53);
-}
+
 
 .deleteAll{
     margin-top: 33%;
     margin-left: 5px;
     border-radius: 4px;
-    background-color: red;
     color: white;
     
 }
