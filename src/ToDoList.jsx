@@ -46,11 +46,11 @@ const Edith = (index)=>{
 
 // delete krny ka arrow function
    const Delete =(indexDelete)=>{
-    // let confirmDelete = window.confirm(`kya ap ye deta ${indexDelete} delete krna chahte hain..?`)
-    // if(confirmDelete){}
+    let confirmDelete = window.confirm(`kya ap ye deta ${indexDelete} delete krna chahte hain..?`)
+    if(confirmDelete){
     let newValue = [...saveText]
     newValue.splice(indexDelete, 1)
-    setSaveText(newValue)}
+    setSaveText(newValue)}}
 
 // Delete All button
 const allDataDelete = () => setSaveText([]);
