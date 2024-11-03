@@ -86,15 +86,13 @@ const allDataDelete = () => setSaveText([]);
           <li key={index} >{value}
           <Button onClick={()=>Delete(index)}className='delete ' variant="danger">Delete</Button>
           <Button onClick={()=>Edith(index)} className='edith'>Edith</Button>
-           </li></ul>
-
-        )}
-     <Button onClick={allDataDelete} className='deleteAll' variant="danger">Delete All</Button>
+           </li></ul>)}
+       <Button onClick={allDataDelete} className='deleteAll' variant="danger">Delete All</Button>
 
       </Col>
 
      </Row>
-     
+     <h3 className='name'>Muhammad ilyas</h3>
      </Container>
     </>
   )
