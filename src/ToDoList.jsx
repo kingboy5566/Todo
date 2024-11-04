@@ -58,7 +58,7 @@ const allDataDelete = () => setSaveText([]);
     <>
 
     <Container className='todo '>
-      <Row className='todo-row '><Col className='todo-content1 mt-1 '>  
+      <Row className='todo-row col-lg-12 col-md-12 col-sm-12 container '><Col className='todo-content1 mt-1 col-lg-12 col-md-12 col-sm-12 container '>  
      <Form  onSubmit={add} >
      <InputGroup className="mb-3 mt-3">
         <Form.Control
@@ -69,8 +69,8 @@ const allDataDelete = () => setSaveText([]);
      </Form> 
 
      </Col></Row>
-     <Row className='mt-3 todo-row '>
-      <Col className='todo-content2'>
+     <Row className='mt-3 todo-row col-lg-12 col-md-12 col-sm-12 container'>
+      <Col className='todo-content2 col-lg-12 col-md-12 col-sm-12 container '>
       <h4 className='task mt-2'>Your Task</h4>
          {saveText.map((value, index)=>
         
