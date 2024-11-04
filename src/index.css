@@ -1,27 +1,27 @@
-body{
-    background-color: blueviolet;
-}
-
 .todo{
     height: 800px;
     overflow: auto;
     background-color: blueviolet;
     
 }
+.todo-row {
+    width: 100%;
+
+}
 .todo-content1{
    
-    border: 1px solid lightgray;
-   height: auto;
+  border: 1px solid lightgray;
+  width: 100%;
+  height: auto;
    border-radius: 4px;
    margin: 10px 27%;
 }
 
 
 
-.todo-content2{
-   
+.todo-content2{ 
   border: 1px solid lightgray;
-   width: 35%;
+   width: 100%;
    height: auto;
    border-radius: 4px;
    margin: 10px 27%;
@@ -54,7 +54,7 @@ margin-left: 10px;
    float: right;
    cursor: pointer;
    height: 35px;
-   margin: -5px 3px;
+   margin: 5px 3px;
    border: none;
    border-radius: 4px;
   background-color: rgb(0, 122, 243);

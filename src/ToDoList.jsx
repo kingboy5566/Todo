@@ -32,7 +32,7 @@ const [editIndex, setEditIndex] = useState(null);
       setEditIndex(null);
   } else { setSaveText([...saveText, inputText ])}
       setInputText ('')}
-
+     
 // Edith button    
 
 const Edith = (index)=>{
@@ -54,30 +54,22 @@ const Edith = (index)=>{
 
 // Delete All button
 const allDataDelete = () => setSaveText([]);
-   
-
-  
-  
-
   return (
     <>
 
     <Container className='todo '>
-      
       <Row className='todo-row '><Col className='todo-content1 mt-1 '>  
      <Form  onSubmit={add} >
      <InputGroup className="mb-3 mt-3">
-        
         <Form.Control
         type="text" value={inputText} onChange={handlevalue} name='name'
           placeholder="Add Your Task"/>
       <Button type='submit' className='add-btn' >  {editIndex !== null ? "Update Todo" : "Add "} </Button>
        </InputGroup>
-   
-
      </Form> 
+
      </Col></Row>
-     <Row className='mt-3'>
+     <Row className='mt-3 todo-row '>
       <Col className='todo-content2'>
       <h4 className='task mt-2'>Your Task</h4>
          {saveText.map((value, index)=>
